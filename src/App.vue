@@ -3,6 +3,7 @@
         <VtcNavbar
             class="py-2 bg-white shadow"
             mobile-breakpoint="md"
+            burger-color="red-500"
             :value="openMobileMenu"
         >
             <template #logo="{ showMobileMenu }">
@@ -15,11 +16,11 @@
                     logo
                 </div>
             </template>
-            <template #menu="{ showMobileMenu, vgtClass }">
+            <template #menu="{ showMobileMenu, vtcClass }">
                 <div
                     class="container mx-auto"
                     :class="[
-                        vgtClass,
+                        vtcClass,
                         {
                             'bg-blue-100 md:bg-transparent': showMobileMenu
                         }
@@ -36,6 +37,8 @@
                 </div>
             </template>
         </VtcNavbar>
+        <br /><br /><br /><br /><br /><br />
+        <VtcBurger color="blue-500" v-model="openMobileMenu" />
     </div>
 </template>
 

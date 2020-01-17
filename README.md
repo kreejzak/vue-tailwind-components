@@ -1,14 +1,20 @@
 # Vue Tailwind Components
-Easy to use vue components utilizing tailwindcss.
+Easy to use vue components utilizing tailwindcss. (Vue 2.6 +, Tailwindcss 1.1 +)
 
-## Installation
+### Components
+- Navbar
+- Burger
+- more to come
+
+### Installation
 ```
 yarn add @kreejzak/vue-tailwind-components
 ```
 
-## Usage
-Import components you want and register them in your components object.
+### Usage
+Import styles and components you want to use and register them in your components object.
 ```
+import '@kreejzak/vue-tailwind-components/dist/vue-tailwind-components.css'
 import { VtcNavbar } from '@kreejzak/vue-tailwind-components'
 export default {
     components: {
@@ -16,13 +22,26 @@ export default {
     }
 }
 ```
+\* Styles are not necessary but following components may not function properly:
+- Burger
 
-In your template
+## VtcNavbar
+Responsive Navbar component.
+You can use slots: logo, menu, burger for placing content into corresponding place of this component.
+You have "showMobileMenu" variable at your disposal on every slot.
+Use the "vtcClass" variable on the root element in menu slot for proper function of the mobile menu.
+
+### Props
+| name | type | description |
+|---|---|---|
+| value | Boolean | This prop controls mobile menu from the outside of component |
+| mobileBreakpoint  | String | Tailwindcss breakpont for switching to desktop version (undefined = always mobile version) |
+| burger-color | String | Tailwindcss color name for the lines of default Burger |
 ```
 <VtcNavbar
     class="py-2 bg-white shadow"
     mobile-breakpoint="md"
-    :value="openMobileMenu"
+    burger-color="red-500"
 >
     <template #logo="{ showMobileMenu }">
         <div
@@ -34,11 +53,11 @@ In your template
             logo
         </div>
     </template>
-    <template #menu="{ showMobileMenu, vgtClass }">
+    <template #menu="{ showMobileMenu, vtcClass }">
         <div
             class="container mx-auto"
             :class="[
-                vgtClass,
+                vtcClass,
                 {
                     'bg-blue-100 md:bg-transparent': showMobileMenu
                 }
@@ -55,4 +74,19 @@ In your template
         </div>
     </template>
 </VtcNavbar>
+```
+
+## VtcBurger
+Default Burger component for mobile version of navbar.
+
+### Props
+| name | type | description |
+|---|---|---|
+| value | Boolean | Controls state of burger (using v-model instead is recommended) |
+| color  | String | Tailwindcss color name for the lines of Burger |
+```
+<VtcBurger
+    color="blue-500"
+    v-model="showMobileMenu"
+/>
 ```

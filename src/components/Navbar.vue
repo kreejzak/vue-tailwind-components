@@ -17,7 +17,7 @@
                 >
                     <slot
                         name="menu"
-                        :vgt-class="
+                        :vtc-class="
                             `absolute inset-0 ${mobileBreakpoint}:relative pt-20 ${mobileBreakpoint}:pt-0 px-4 ${mobileBreakpoint}:px-2`
                         "
                         :show-mobile-menu="showMobileMenu"
@@ -28,7 +28,10 @@
                     :class="`${mobileBreakpoint}:hidden`"
                 >
                     <slot name="burger" :show-mobile-menu="showMobileMenu">
-                        <VtcBurger v-model="showMobileMenu" />
+                        <VtcBurger
+                            :color="burgerColor"
+                            v-model="showMobileMenu"
+                        />
                     </slot>
                 </div>
             </div>
@@ -40,7 +43,7 @@
 import VtcBurger from './Burger'
 export default {
     name: 'VtcNavbar',
-    props: ['value', 'mobileBreakpoint'],
+    props: ['value', 'mobileBreakpoint', 'burgerColor'],
     data() {
         return {
             showMobileMenu: this.value || false,

@@ -40,20 +40,85 @@
             </template>
         </VtcNavbar>
         <div class="container px-4 mx-auto pt-32">
-            <div class="flex justify-between">
+            <div class="flex justify-between mb-16">
                 <VtcBurger color="red-500" v-model="openMobileMenu" />
                 <VtcBurger color="green-500" v-model="openMobileMenu" />
                 <VtcBurger color="blue-500" v-model="openMobileMenu" />
                 <VtcBurger color="pink-500" v-model="openMobileMenu" />
                 <VtcBurger v-model="openMobileMenu" />
             </div>
+
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
+            <p>long content, scroll down</p>
         </div>
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
 </template>
 

@@ -37,11 +37,18 @@ Use the `vtcClass` variable on the root element in menu slot for proper function
 | value | Boolean | This prop controls mobile menu from outside of the component |
 | mobileBreakpoint  | String | Tailwindcss breakpoint for switching to desktop version (undefined = always mobile version) |
 | burgerColor | String | Tailwindcss color name for the lines of default Burger |
+| scrolledThreshold | Number | Number of pixels scrolled from top of page fires event |
+| unscrolledClass | String | class applied to Navbar when `window.scrollY` < `scrolledThreshold` |
+| scrolledClass | String | class applied to Navbar when `window.scrollY` >= `scrolledThreshold` |
 ```html
 <VtcNavbar
-    class="py-2 bg-white shadow"
-    mobile-breakpoint="md"
-    burger-color="red-500"
+    class="py-2"
+    unscrolledClass="bg-white"
+    scrolledClass="bg-blue-100 shadow"
+    mobileBreakpoint="md"
+    burgerColor="red-500"
+    :scrolledThreshold="100"
+    :value="openMobileMenu"
 >
     <template #logo="{ showMobileMenu }">
         <div
@@ -55,7 +62,6 @@ Use the `vtcClass` variable on the root element in menu slot for proper function
     </template>
     <template #menu="{ showMobileMenu, vtcClass }">
         <div
-            class="container mx-auto"
             :class="[
                 vtcClass,
                 {
@@ -63,14 +69,14 @@ Use the `vtcClass` variable on the root element in menu slot for proper function
                 }
             ]"
         >
-            <ul
-                class="flex flex-col md:flex-row justify-end -mx-2 justify-end"
-            >
-                <li class="px-2">item 1</li>
-                <li class="px-2">item 2</li>
-                <li class="px-2">item 3</li>
-                <li class="px-2">item 4</li>
-            </ul>
+            <div class="container mx-auto px-4">
+                <ul class="flex flex-col md:flex-row justify-end -mx-4">
+                    <li class="ml-4">item 1</li>
+                    <li class="ml-4">item 2</li>
+                    <li class="ml-4">item 3</li>
+                    <li class="ml-4">item 4</li>
+                </ul>
+            </div>
         </div>
     </template>
 </VtcNavbar>

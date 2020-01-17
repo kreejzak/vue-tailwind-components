@@ -8,6 +8,7 @@
 
 <script>
 export default {
+    name: 'VtcBurger',
     props: ['value'],
     data() {
         return {

@@ -39,6 +39,7 @@
 <script>
 import VtcBurger from './Burger'
 export default {
+    name: 'VtcNavbar',
     props: ['value', 'mobileBreakpoint'],
     data() {
         return {

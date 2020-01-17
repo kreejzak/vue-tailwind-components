@@ -40,11 +40,16 @@
 </template>
 
 <script>
+import { VtcNavbar, VtcBurger } from './components'
 export default {
     data() {
         return {
             openMobileMenu: false
         }
+    },
+    components: {
+        VtcNavbar,
+        VtcBurger
     }
 }
 </script>

@@ -1,14 +1,15 @@
 import Vue from 'vue'
-import VtcBurger from './Burger.vue'
-import VtcNavbar from './Navbar.vue'
+import Burger from './Burger.vue'
+import Navbar from './Navbar.vue'
 
 const Components = {
-    VtcBurger,
-    VtcNavbar
+    Burger,
+    Navbar
 }
 
 Object.keys(Components).forEach(name => {
     Vue.component(name, Components[name])
 })
 
-export default { VtcBurger, VtcNavbar }
+export const VtcBurger = Burger
+export const VtcNavbar = Navbar

@@ -6,6 +6,9 @@ Easy to use vue components utilizing tailwindcss. (Vue 2.6 +, Tailwindcss 1.1 +)
 - Burger
 - more to come
 
+### Demo
+You can find demo [here](http://paulcross.cz/vue-tailwind-components/).
+
 ### Installation
 ```
 yarn add @kreejzak/vue-tailwind-components

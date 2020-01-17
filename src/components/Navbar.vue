@@ -1,7 +1,7 @@
 <template>
     <nav
         class="fixed pin-t inset-x-0 z-50"
-        :class="`${scrolled ? scrolledClass : ''}`"
+        :class="`${scrolled ? scrolledClass : unscrolledClass}`"
     >
         <div class="container px-4 mx-auto">
             <div class="flex items-center justify-between -mx-4">

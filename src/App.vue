@@ -1,9 +1,12 @@
 <template>
     <div id="app">
         <VtcNavbar
-            class="py-2 bg-white shadow"
-            mobile-breakpoint="md"
-            burger-color="red-500"
+            class="py-2"
+            unscrolledClass="bg-white"
+            scrolledClass="bg-blue-100 shadow"
+            mobileBreakpoint="md"
+            burgerColor="red-500"
+            :scrolledThreshold="100"
             :value="openMobileMenu"
         >
             <template #logo="{ showMobileMenu }">
@@ -18,7 +21,6 @@
             </template>
             <template #menu="{ showMobileMenu, vtcClass }">
                 <div
-                    class="container mx-auto"
                     :class="[
                         vtcClass,
                         {
@@ -26,12 +28,14 @@
                         }
                     ]"
                 >
-                    <ul class="flex flex-col md:flex-row justify-end -mx-2">
-                        <li class="px-2">item 1</li>
-                        <li class="px-2">item 2</li>
-                        <li class="px-2">item 3</li>
-                        <li class="px-2">item 4</li>
-                    </ul>
+                    <div class="container mx-auto px-4 md:px-0">
+                        <ul class="flex flex-col md:flex-row justify-end -mx-4">
+                            <li class="px-4">item 1</li>
+                            <li class="px-4">item 2</li>
+                            <li class="px-4">item 3</li>
+                            <li class="px-4">item 4</li>
+                        </ul>
+                    </div>
                 </div>
             </template>
         </VtcNavbar>
@@ -44,6 +48,12 @@
                 <VtcBurger v-model="openMobileMenu" />
             </div>
         </div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     </div>
 </template>
 

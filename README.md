@@ -1,5 +1,5 @@
 # Vue Tailwind Components
-Easy to use wrapperpackage wrapping frequently used components.
+Easy to use vue components utilizing tailwindcss.
 
 ## Installation
 ```

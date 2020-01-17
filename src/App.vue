@@ -26,9 +26,7 @@
                         }
                     ]"
                 >
-                    <ul
-                        class="flex flex-col md:flex-row justify-end -mx-2 justify-end"
-                    >
+                    <ul class="flex flex-col md:flex-row justify-end -mx-2">
                         <li class="px-2">item 1</li>
                         <li class="px-2">item 2</li>
                         <li class="px-2">item 3</li>
@@ -37,8 +35,15 @@
                 </div>
             </template>
         </VtcNavbar>
-        <br /><br /><br /><br /><br /><br />
-        <VtcBurger color="blue-500" v-model="openMobileMenu" />
+        <div class="container px-4 mx-auto pt-32">
+            <div class="flex justify-between">
+                <VtcBurger color="red-500" v-model="openMobileMenu" />
+                <VtcBurger color="green-500" v-model="openMobileMenu" />
+                <VtcBurger color="blue-500" v-model="openMobileMenu" />
+                <VtcBurger color="pink-500" v-model="openMobileMenu" />
+                <VtcBurger v-model="openMobileMenu" />
+            </div>
+        </div>
     </div>
 </template>
 

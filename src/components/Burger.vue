@@ -1,15 +1,28 @@
 <template>
-    <button class="burger" :class="{ open }" @click="toggleBurger()">
-        <div class="burger-1"></div>
-        <div class="burger-2"></div>
-        <div class="burger-3"></div>
+    <button
+        class="burger block m-0 p-0 flex items-center flex-col justify-between h-5 cursor-pointer"
+        :class="{ open }"
+        @click="toggleBurger()"
+    >
+        <div
+            class="burger-1 relative w-6"
+            :class="`bg-${color || 'black'}`"
+        ></div>
+        <div
+            class="burger-2 relative w-6"
+            :class="`bg-${color || 'black'}`"
+        ></div>
+        <div
+            class="burger-3 relative w-6"
+            :class="`bg-${color || 'black'}`"
+        ></div>
     </button>
 </template>
 
 <script>
 export default {
     name: 'VtcBurger',
-    props: ['value'],
+    props: ['value', 'color'],
     data() {
         return {
             open: this.value
@@ -31,14 +44,11 @@ export default {
 
 <style lang="postcss" scoped>
 .burger {
-    @apply block m-0 p-0 flex items-center flex-col justify-between h-5 cursor-pointer;
     &:focus {
         outline: none;
         box-shadow: none;
     }
     & > div {
-        @apply bg-blue-500 relative;
-        width: 30px;
         height: 2px;
         transition: 0.3s all;
     }

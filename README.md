@@ -12,8 +12,8 @@ yarn add @kreejzak/vue-tailwind-components
 ```
 
 ### Usage
-Import styles and components you want to use and register them in your components object.
-```
+Import styles and components you want to use and register them in your `components` object.
+```javascript
 import '@kreejzak/vue-tailwind-components/dist/vue-tailwind-components.css'
 import { VtcNavbar } from '@kreejzak/vue-tailwind-components'
 export default {
@@ -27,17 +27,17 @@ export default {
 
 ## VtcNavbar
 Responsive Navbar component.
-You can use slots: logo, menu, burger for placing content into corresponding place of this component.
-You have "showMobileMenu" variable at your disposal on every slot.
-Use the "vtcClass" variable on the root element in menu slot for proper function of the mobile menu.
+Use slots: `logo`, `menu`, `burger` for placing content into corresponding place of this component.
+You have `showMobileMenu` variable at your disposal on every slot.
+Use the `vtcClass` variable on the root element in menu slot for proper function of the mobile menu.
 
 ### Props
 | name | type | description |
 |---|---|---|
-| value | Boolean | This prop controls mobile menu from the outside of component |
-| mobileBreakpoint  | String | Tailwindcss breakpont for switching to desktop version (undefined = always mobile version) |
-| burger-color | String | Tailwindcss color name for the lines of default Burger |
-```
+| value | Boolean | This prop controls mobile menu from outside of the component |
+| mobileBreakpoint  | String | Tailwindcss breakpoint for switching to desktop version (undefined = always mobile version) |
+| burgerColor | String | Tailwindcss color name for the lines of default Burger |
+```html
 <VtcNavbar
     class="py-2 bg-white shadow"
     mobile-breakpoint="md"
@@ -84,7 +84,7 @@ Default Burger component for mobile version of navbar.
 |---|---|---|
 | value | Boolean | Controls state of burger (using v-model instead is recommended) |
 | color  | String | Tailwindcss color name for the lines of Burger |
-```
+```html
 <VtcBurger
     color="blue-500"
     v-model="showMobileMenu"

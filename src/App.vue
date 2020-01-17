@@ -1,28 +1,50 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div id="app">
+        <VtcNavbar
+            class="py-2 bg-white shadow"
+            mobile-breakpoint="md"
+            :value="openMobileMenu"
+        >
+            <template #logo="{ showMobileMenu }">
+                <div
+                    class="font-bold uppercase py-2"
+                    :class="{
+                        'text-red-500 md:text-black': showMobileMenu
+                    }"
+                >
+                    logo
+                </div>
+            </template>
+            <template #menu="{ showMobileMenu, vgtClass }">
+                <div
+                    class="container mx-auto"
+                    :class="[
+                        vgtClass,
+                        {
+                            'bg-blue-100 md:bg-transparent': showMobileMenu
+                        }
+                    ]"
+                >
+                    <ul
+                        class="flex flex-col md:flex-row justify-end -mx-2 justify-end"
+                    >
+                        <li class="px-2">item 1</li>
+                        <li class="px-2">item 2</li>
+                        <li class="px-2">item 3</li>
+                        <li class="px-2">item 4</li>
+                    </ul>
+                </div>
+            </template>
+        </VtcNavbar>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
+    data() {
+        return {
+            openMobileMenu: false
+        }
+    }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

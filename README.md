@@ -37,7 +37,7 @@ Use the `vtcClass` variable on the root element in menu slot for proper function
 ### Props
 | name | type | description |
 |---|---|---|
-| value | Boolean | This prop controls mobile menu from outside of the component |
+| value | Boolean | This prop controls mobile menu from outside of the component (using `v-model` is recommended) |
 | mobileBreakpoint  | String | Tailwindcss breakpoint for switching to desktop version (undefined = always mobile version) |
 | burgerColor | String | Tailwindcss color name for the lines of default Burger |
 | scrolledThreshold | Number | Number of pixels scrolled from top of page fires event |
@@ -91,7 +91,7 @@ Default Burger component for mobile version of navbar.
 ### Props
 | name | type | description |
 |---|---|---|
-| value | Boolean | Controls state of burger (using v-model instead is recommended) |
+| value | Boolean | Controls state of burger (using `v-model` instead is recommended) |
 | color  | String | Tailwindcss color name for the lines of Burger |
 ```html
 <VtcBurger

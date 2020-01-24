@@ -7,7 +7,7 @@
             mobileBreakpoint="md"
             burgerColor="red-500"
             :scrolledThreshold="100"
-            :value="openMobileMenu"
+            v-model="openMobileMenu"
         >
             <template #logo="{ showMobileMenu }">
                 <div
@@ -30,10 +30,18 @@
                 >
                     <div class="container mx-auto px-4 md:px-0">
                         <ul class="flex flex-col md:flex-row justify-end -mx-4">
-                            <li class="px-4">item 1</li>
-                            <li class="px-4">item 2</li>
-                            <li class="px-4">item 3</li>
-                            <li class="px-4">item 4</li>
+                            <li class="px-4" @click="openMobileMenu = false">
+                                item 1
+                            </li>
+                            <li class="px-4" @click="openMobileMenu = false">
+                                item 2
+                            </li>
+                            <li class="px-4" @click="openMobileMenu = false">
+                                item 3
+                            </li>
+                            <li class="px-4" @click="openMobileMenu = false">
+                                item 4
+                            </li>
                         </ul>
                     </div>
                 </div>

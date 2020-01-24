@@ -6,7 +6,11 @@
         <div class="container px-4 mx-auto">
             <div class="flex items-center justify-between -mx-4">
                 <div class="px-4 relative z-50">
-                    <slot name="logo" :show-mobile-menu="showMobileMenu"></slot>
+                    <slot
+                        name="logo"
+                        :scrolled="scrolled"
+                        :show-mobile-menu="showMobileMenu"
+                    ></slot>
                 </div>
                 <div
                     class="px-4 flex-1 absolute h-screen inset-x-0 top-0 z-40"
@@ -24,13 +28,18 @@
                             `absolute inset-0 ${mobileBreakpoint}:relative pt-20 ${mobileBreakpoint}:pt-0`
                         "
                         :show-mobile-menu="showMobileMenu"
+                        :scrolled="scrolled"
                     ></slot>
                 </div>
                 <div
                     class="px-4 relative z-50"
                     :class="`${mobileBreakpoint}:hidden`"
                 >
-                    <slot name="burger" :show-mobile-menu="showMobileMenu">
+                    <slot
+                        name="burger"
+                        :scrolled="scrolled"
+                        :show-mobile-menu="showMobileMenu"
+                    >
                         <VtcBurger
                             :color="burgerColor"
                             v-model="showMobileMenu"
@@ -64,6 +73,10 @@ export default {
     watch: {
         value(newVal) {
             this.showMobileMenu = newVal
+            this.$emit('input', newVal)
+        },
+        showMobileMenu(newVal) {
+            this.$emit('input', newVal)
         }
     },
     components: {

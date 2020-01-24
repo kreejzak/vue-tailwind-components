@@ -51,9 +51,9 @@ Use the `vtcClass` variable on the root element in menu slot for proper function
     mobileBreakpoint="md"
     burgerColor="red-500"
     :scrolledThreshold="100"
-    :value="openMobileMenu"
+    v-model="openMobileMenu"
 >
-    <template #logo="{ showMobileMenu }">
+    <template #logo="{ showMobileMenu, scrolled }">
         <div
             class="font-bold uppercase py-2"
             :class="{
@@ -63,7 +63,7 @@ Use the `vtcClass` variable on the root element in menu slot for proper function
             logo
         </div>
     </template>
-    <template #menu="{ showMobileMenu, vtcClass }">
+    <template #menu="{ showMobileMenu, scrolled, vtcClass }">
         <div
             :class="[
                 vtcClass,

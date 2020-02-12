@@ -1,6 +1,6 @@
 {
     "name": "@kreejzak/vue-tailwind-components",
-    "version": "0.1.12",
+    "version": "0.1.13",
     "license": "MIT",
     "private": false,
     "main": "./dist/vue-tailwind-components.common.js",
@@ -36,5 +36,15 @@
         "name": "Paul Cross",
         "email": "me@paulcross.cz",
         "url": "http://paulcross.cz"
-    }
+    },
+    "keywords": [
+        "vue",
+        "vuejs",
+        "vue.js",
+        "tailwind",
+        "tailwindcss",
+        "tailwind components",
+        "vue tailwind components",
+        "kreejzak"
+    ]
 }

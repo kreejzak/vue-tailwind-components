@@ -1,5 +1,6 @@
 # Vue Tailwind Components
 Easy to use vue components utilizing tailwindcss. (Vue 2.6 +, Tailwindcss 1.1 +)
+[![npm version](https://badge.fury.io/js/%40kreejzak%2Fvue-tailwind-components.svg)](https://badge.fury.io/js/%40kreejzak%2Fvue-tailwind-components)
 
 [![npm version](https://badge.fury.io/js/%40kreejzak%2Fvue-tailwind-components.svg)](https://badge.fury.io/js/%40kreejzak%2Fvue-tailwind-components)
 

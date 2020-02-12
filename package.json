@@ -1,6 +1,6 @@
 {
     "name": "@kreejzak/vue-tailwind-components",
-    "version": "0.1.14",
+    "version": "0.1.15",
     "license": "MIT",
     "private": false,
     "main": "./dist/vue-tailwind-components.common.js",

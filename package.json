@@ -1,6 +1,6 @@
 {
     "name": "@kreejzak/vue-tailwind-components",
-    "version": "0.1.11",
+    "version": "0.1.12",
     "license": "MIT",
     "private": false,
     "main": "./dist/vue-tailwind-components.common.js",
@@ -29,7 +29,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/kreejzak/vue-tailwind-components.git",
-        "homepage": "https://github.com/kreejzak/vue-tailwind-components#readme"
+        "url": "https://github.com/kreejzak/vue-tailwind-components.git"
+    },
+    "homepage": "https://github.com/kreejzak/vue-tailwind-components#readme",
+    "author": {
+        "name": "Paul Cross",
+        "email": "me@paulcross.cz",
+        "url": "http://paulcross.cz"
     }
 }

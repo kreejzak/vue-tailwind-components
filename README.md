@@ -1,23 +1,29 @@
 # Vue Tailwind Components
+
 Easy to use vue components utilizing tailwindcss. (Vue 2.6 +, Tailwindcss 1.1 +)
 
 [![npm version](https://badge.fury.io/js/%40kreejzak%2Fvue-tailwind-components.svg)](https://badge.fury.io/js/%40kreejzak%2Fvue-tailwind-components)
 
 ### Components
-- Navbar
-- Burger
-- more to come
 
-### Demo
-You can find demo [here](http://paulcross.cz/vue-tailwind-components/).
+-   Navbar
+-   Burger
+-   more to come
+
+### [Demo](https://paulcross.cz/vue-tailwind-components/)
+
+You can find demo [here](https://paulcross.cz/vue-tailwind-components/).
 
 ### Installation
+
 ```
 yarn add @kreejzak/vue-tailwind-components
 ```
 
 ### Usage
+
 Import styles and components you want to use and register them in your `components` object.
+
 ```javascript
 import '@kreejzak/vue-tailwind-components/dist/vue-tailwind-components.css'
 import { VtcNavbar } from '@kreejzak/vue-tailwind-components'
@@ -27,24 +33,29 @@ export default {
     }
 }
 ```
+
 \* Styles are not necessary but following components may not function properly:
-- Burger
+
+-   Burger
 
 ## VtcNavbar
+
 Responsive Navbar component.
 Use slots: `logo`, `menu`, `burger` for placing content into corresponding place of this component.
 You have `showMobileMenu` variable at your disposal on every slot.
 Use the `vtcClass` variable on the root element in menu slot for proper function of the mobile menu.
 
 ### Props
-| name | type | description |
-|---|---|---|
-| value | Boolean | This prop controls mobile menu from outside of the component (using `v-model` is recommended) |
-| mobileBreakpoint  | String | Tailwindcss breakpoint for switching to desktop version (undefined = always mobile version) |
-| burgerColor | String | Tailwindcss color name for the lines of default Burger |
-| scrolledThreshold | Number | Number of pixels scrolled from top of page fires event |
-| unscrolledClass | String | class applied to Navbar when `window.scrollY` < `scrolledThreshold` |
-| scrolledClass | String | class applied to Navbar when `window.scrollY` >= `scrolledThreshold` |
+
+| name              | type    | description                                                                                   |
+| ----------------- | ------- | --------------------------------------------------------------------------------------------- |
+| value             | Boolean | This prop controls mobile menu from outside of the component (using `v-model` is recommended) |
+| mobileBreakpoint  | String  | Tailwindcss breakpoint for switching to desktop version (undefined = always mobile version)   |
+| burgerColor       | String  | Tailwindcss color name for the lines of default Burger                                        |
+| scrolledThreshold | Number  | Number of pixels scrolled from top of page fires event                                        |
+| unscrolledClass   | String  | class applied to Navbar when `window.scrollY` < `scrolledThreshold`                           |
+| scrolledClass     | String  | class applied to Navbar when `window.scrollY` >= `scrolledThreshold`                          |
+
 ```html
 <VtcNavbar
     class="py-2"
@@ -88,16 +99,16 @@ Use the `vtcClass` variable on the root element in menu slot for proper function
 ```
 
 ## VtcBurger
+
 Default Burger component for mobile version of navbar.
 
 ### Props
-| name | type | description |
-|---|---|---|
+
+| name  | type    | description                                                       |
+| ----- | ------- | ----------------------------------------------------------------- |
 | value | Boolean | Controls state of burger (using `v-model` instead is recommended) |
-| color  | String | Tailwindcss color name for the lines of Burger |
+| color | String  | Tailwindcss color name for the lines of Burger                    |
+
 ```html
-<VtcBurger
-    color="blue-500"
-    v-model="showMobileMenu"
-/>
+<VtcBurger color="blue-500" v-model="showMobileMenu" />
 ```

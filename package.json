@@ -1,6 +1,6 @@
 {
     "name": "@kreejzak/vue-tailwind-components",
-    "version": "0.1.10",
+    "version": "0.1.11",
     "license": "MIT",
     "private": false,
     "main": "./dist/vue-tailwind-components.common.js",
@@ -29,6 +29,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/kreejzak/vue-tailwind-components.git"
+        "url": "https://github.com/kreejzak/vue-tailwind-components.git",
+        "homepage": "https://github.com/kreejzak/vue-tailwind-components#readme"
     }
 }

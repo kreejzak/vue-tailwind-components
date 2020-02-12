@@ -1,6 +1,6 @@
 {
     "name": "@kreejzak/vue-tailwind-components",
-    "version": "0.1.9",
+    "version": "0.1.10",
     "license": "MIT",
     "private": false,
     "main": "./dist/vue-tailwind-components.common.js",
@@ -17,7 +17,7 @@
         "*.js"
     ],
     "dependencies": {
-        "core-js": "^3.4.4",
+        "core-js": "^3.6.4",
         "postcss-nested": "^4.2.1",
         "tailwindcss": "^1.1.4",
         "vue": "^2.6.10"
@@ -26,5 +26,9 @@
         "@vue/cli-plugin-babel": "^4.1.0",
         "@vue/cli-service": "^4.1.0",
         "vue-template-compiler": "^2.6.10"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kreejzak/vue-tailwind-components.git"
     }
 }

@@ -12,7 +12,7 @@ Easy to use vue components utilizing tailwindcss. (Vue 2.6 +, Tailwindcss 1.1 +)
 
 ### [Demo](https://paulcross.cz/vue-tailwind-components/)
 
-You can find demo [here](https://paulcross.cz/vue-tailwind-components/).
+You can find demo [here](https://vtc.paulcross.cz).
 
 ### Installation
 

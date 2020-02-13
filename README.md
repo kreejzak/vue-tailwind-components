@@ -10,7 +10,7 @@ Easy to use vue components utilizing tailwindcss. (Vue 2.6 +, Tailwindcss 1.1 +)
 -   Burger
 -   more to come
 
-### [Demo](https://paulcross.cz/vue-tailwind-components/)
+### [Demo](https://vtc.paulcross.cz)
 
 You can find demo [here](https://vtc.paulcross.cz).
 

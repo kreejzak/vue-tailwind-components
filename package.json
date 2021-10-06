@@ -1,6 +1,6 @@
 {
     "name": "@kreejzak/vue-tailwind-components",
-    "version": "0.1.23",
+    "version": "0.1.24",
     "license": "MIT",
     "private": false,
     "main": "./dist/vue-tailwind-components.common.js",
@@ -19,7 +19,7 @@
     "dependencies": {
         "core-js": "^3.6.4",
         "postcss-nested": "^4.2.1",
-        "tailwindcss": "^1.1.4",
+        "tailwindcss": "^2.2.16",
         "vue": "^2.6.10"
     },
     "devDependencies": {

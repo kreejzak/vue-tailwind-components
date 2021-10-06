@@ -1,51 +1,53 @@
 {
-    "name": "@kreejzak/vue-tailwind-components",
-    "version": "0.1.24",
-    "license": "MIT",
-    "private": false,
-    "main": "./dist/vue-tailwind-components.common.js",
-    "scripts": {
-        "serve": "vue-cli-service serve",
-        "build": "vue-cli-service build",
-        "build-bundle": "vue-cli-service build --target lib --name vue-tailwind-components ./src/components/index.js"
-    },
-    "files": [
-        "dist/*",
-        "src/*",
-        "public/*",
-        "*.json",
-        "*.js"
-    ],
-    "dependencies": {
-        "core-js": "^3.6.4",
-        "postcss-nested": "^4.2.1",
-        "tailwindcss": "^2.2.16",
-        "vue": "^2.6.10"
-    },
-    "devDependencies": {
-        "@vue/cli-plugin-babel": "^4.1.0",
-        "@vue/cli-service": "^4.1.0",
-        "vue-template-compiler": "^2.6.10",
-        "postcss": "^7.0.36"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/kreejzak/vue-tailwind-components.git"
-    },
-    "homepage": "https://github.com/kreejzak/vue-tailwind-components#readme",
-    "author": {
-        "name": "Paul Cross",
-        "email": "me@paulcross.cz",
-        "url": "http://paulcross.cz"
-    },
-    "keywords": [
-        "vue",
-        "vuejs",
-        "vue.js",
-        "tailwind",
-        "tailwindcss",
-        "tailwind components",
-        "vue tailwind components",
-        "kreejzak"
-    ]
+  "name": "@kreejzak/vue-tailwind-components",
+  "version": "0.1.25",
+  "private": false,
+  "author": {
+    "name": "Paul Cross",
+    "email": "me@paulcross.cz",
+    "url": "http://paulcross.cz"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build-bundle": "vue-cli-service build --target lib --name vue-tailwind-components ./src/components/index.js"
+  },
+  "main": "./dist/vue-tailwind-components.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
+  "dependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "autoprefixer": "^9",
+    "core-js": "^3.6.4",
+    "postcss": "^7",
+    "postcss-nested": "^4.2.3",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^4.5.13",
+    "vue-cli-plugin-tailwind": "~2.0.6",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "homepage": "https://github.com/kreejzak/vue-tailwind-components#readme",
+  "keywords": [
+    "vue",
+    "vuejs",
+    "vue.js",
+    "tailwind",
+    "tailwindcss",
+    "tailwind components",
+    "vue tailwind components",
+    "kreejzak"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kreejzak/vue-tailwind-components.git"
+  }
 }

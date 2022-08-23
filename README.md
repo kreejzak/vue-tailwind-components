@@ -1,3 +1,7 @@
+# this package is deprecated (for now)
+
+I maybe plan to revive this package in the future for vue 3 and tailwind 3+, but for now I'm not in need of samey looking components.
+
 # Vue Tailwind Components
 
 Easy to use vue components utilizing tailwindcss. (Vue 2.6 +, Tailwindcss 1.1 +)
@@ -8,7 +12,7 @@ Easy to use vue components utilizing tailwindcss. (Vue 2.6 +, Tailwindcss 1.1 +)
 
 -   Navbar
 -   Burger
--   more to come
+-   more to come (lol)
 
 ### [Demo](https://vtc.paulcross.cz)
 
@@ -66,17 +70,22 @@ Use the `vtcClass` variable on the root element in menu slot for proper function
     :scrolledThreshold="100"
     v-model="openMobileMenu"
 >
+
     <template #logo="{ showMobileMenu, scrolled }">
+
         <div
             class="font-bold uppercase py-2"
             :class="{
                 'text-red-500 md:text-black': showMobileMenu
             }"
         >
-            logo
+             logo
         </div>
+
     </template>
+
     <template #menu="{ showMobileMenu, scrolled, vtcClass }">
+
         <div
             :class="[
                 vtcClass,
@@ -85,16 +94,27 @@ Use the `vtcClass` variable on the root element in menu slot for proper function
                 }
             ]"
         >
+
             <div class="container mx-auto px-4">
+
                 <ul class="flex flex-col md:flex-row justify-end -mx-4">
+
                     <li class="ml-4">item 1</li>
+
                     <li class="ml-4">item 2</li>
+
                     <li class="ml-4">item 3</li>
+
                     <li class="ml-4">item 4</li>
+
                 </ul>
+
             </div>
+
         </div>
+
     </template>
+
 </VtcNavbar>
 ```
 
